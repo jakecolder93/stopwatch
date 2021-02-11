@@ -1,0 +1,150 @@
+/* Set properties for the body of html document*/
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Heading properties*/
+h1 {
+    color: rgba(41, 41, 41, 0.89);
+    text-align: center;
+}
+
+/*Class for centering buttons*/
+.wrap{
+    text-align: center;
+}
+
+.watchbox{
+    height: 80px;
+    width: 250px;
+    background-color: transparent;
+    opacity: 0.6;
+    border: 2px solid rgb(5, 178, 184);
+    border-radius: 25px;
+    position: relative;
+    display: inline-block;
+    font-size: x-large;
+}
+
+/*Stopwatch play button*/
+.play-btn {    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    display: inline-block;
+    margin: 100px auto;
+    cursor: pointer;
+}
+
+.play-btn:hover{
+    box-shadow: 0px 0px 25px 3px rgb(0, 255, 255);
+}
+
+.play-btn:active{
+    box-shadow: 0px 0px 100px 5px rgb(255, 238, 0);
+    transform: translateY(4px);
+}
+
+.play-btn::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    transform-origin: center center;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid rgb(0, 0, 0);
+    border-bottom: 15px solid transparent;
+    z-index: 100;
+    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
+/*Stopwatch pause button*/
+.pause-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    display: inline-block;
+    margin: 100px auto;
+    cursor: pointer;
+}
+
+.pause-btn:hover{
+    box-shadow: 0px 0px 25px 3px rgb(0, 255, 255);
+}
+
+.pause-btn:active{
+    box-shadow: 0px 0px 100px 5px rgb(255, 238, 0);
+    transform: translateY(4px);
+}
+
+
+.pause-btn::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    transform-origin: center center;
+    width: 0px;
+    height: 25px;
+    border-style: double;
+    border-width: 0px 15px 0px 15px;
+    border-color:white;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
+
+/*Stopwatch stop button*/
+.stop-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    position: relative;
+    display: inline-block;
+    margin: 100px auto;
+    cursor: pointer;
+}
+
+.stop-btn:hover{
+    box-shadow: 0px 0px 25px 3px rgb(0, 255, 255);
+}
+
+.stop-btn:active{
+    box-shadow: 0px 0px 100px 5px rgb(255, 238, 0);
+    transform: translateY(4px);
+}
+
+.stop-btn::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    transform-origin: center center;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+    z-index: 100;
+    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+
